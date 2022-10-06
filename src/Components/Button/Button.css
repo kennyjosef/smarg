@@ -1,0 +1,21 @@
+
+.btn{
+    background: linear-gradient(92.21deg, #2F4FFF 0.53%, #0085FF 99.3%);
+    border-radius: 7px;
+    width: 148px;
+    height: 50px;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+@media screen and (max-width:768px) {
+    .btn{
+        width: 100px;
+        height: 45px;
+    }
+}

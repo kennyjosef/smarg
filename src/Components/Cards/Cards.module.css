@@ -1,0 +1,36 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    margin-top: 90px;
+}
+
+.card img{
+    width: 50px;
+    margin-bottom: 27px;
+}
+.card h3{
+    padding-bottom: 13px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+    
+}
+.card p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    font-family: sans-serif;    
+    color: rgba(0, 0, 0, 0.63);
+    
+}
+@media screen and (max-width:768px) {
+    .card{
+        margin-top: 15px;
+    }
+}

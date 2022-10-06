@@ -1,0 +1,31 @@
+.policy{
+
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    /* margin-bottom: 100px; */
+}
+.policy h4{
+    font-family: sans-serif;
+    padding-bottom: 28px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    color: #000000;
+    
+}
+.policy p{
+    text-align: justify;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.63);
+    padding-left: 30px;
+    
+}
+.forBlue{
+    margin-top: 0;
+}
