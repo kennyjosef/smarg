@@ -68,8 +68,10 @@
         position: unset;
     }
     .blue h4{
-        padding: 10px 10px 5px 10px;
+        padding: 20px 10px 5px 10px;
         width: 100%;
+        font-size: 30px;
+        line-height: 38px;
     }
     .form{
         width: 80%;
