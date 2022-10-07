@@ -80,6 +80,7 @@
         width: 100%;
     }
     .rel{
+        position: unset;
         width: 100%;
     }
     .picContent{
