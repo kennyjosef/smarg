@@ -35,11 +35,11 @@ const Solution = () => {
                         </div>
                     </div>
                     <div className={classes.two}>
-                        <div >
+                        <div className={classes.twoTwo} >
                             <img src={Logo8} alt="pic"/>
                             <p>You rejected Akintola’s cancellation request to this contract</p>
                         </div>
-                        <div>
+                        <div className={classes.twoTwoBtn}>
                             <SoluButton name="Escalate Request"/>
                         </div>
                     </div>
@@ -61,11 +61,11 @@ const Solution = () => {
                         </div>
                     </div>
                     <div className={classes.two}>
-                        <div >
+                        <div className={classes.twoTwo}>
                             <img src={Logo8} alt="pic"/>
                             <p>You rejected Akintola’s cancellation request to this contract</p>
                         </div>
-                        <div>
+                        <div className={classes.twoTwoBtn}>
                             <SoluButton name="Escalate Request"/>
                         </div>
                     </div>
