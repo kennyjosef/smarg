@@ -29,3 +29,8 @@
 .forBlue{
     margin-top: 0;
 }
+@media screen and (max-width:768px) {
+    .policy p{
+        padding-left: 10px;
+    }
+}

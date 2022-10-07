@@ -65,15 +65,23 @@
         width: 100%;
         margin-top: 10px;
         border-radius: 0px;
+        position: unset;
     }
     .blue h4{
-        padding-top: 10px;
-        padding-bottom: 5px;
+        padding: 10px 10px 5px 10px;
+        width: 100%;
     }
     .form{
         width: 80%;
         margin: auto;
         margin-top: 10px;
+    }
+    .blue p{
+        width: 100%;
+        text-align: center;
+    }
+    .bluephoto{
+        position: unset;
     }
     
     

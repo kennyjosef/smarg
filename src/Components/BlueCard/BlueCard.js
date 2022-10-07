@@ -1,5 +1,5 @@
 import React from 'react'
-// import Button from '../Button/Button'
+import Button from '../Button/Button'
 import classes from './Blue.module.css'
 import Logo5 from '../../Assests/blueePhoto.png'
 
@@ -12,9 +12,9 @@ const BlueCard = () => {
         <input 
         type="text"
         placeholder='Enter Email Address'/>
-        {/* <div className={classes.up}>
+        <div className={classes.up}>
         <Button name="Get Started"/>
-        </div> */}
+        </div>
       </form>
       <div className={classes.bluephoto}>
         <img src={Logo5} alt="pic"/>
