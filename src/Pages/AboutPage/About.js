@@ -7,7 +7,7 @@ import Logo4 from '../../Assests/white.png'
 import Cards from '../../Components/Cards/Cards'
 import classes from './About.module.css'
 import Button from '../../Components/Button/Button'
-import BlueCard from '../../Components/BlueCard/BlueCard'
+// import BlueCard from '../../Components/BlueCard/BlueCard'
 
 
 const About = () => {
@@ -32,7 +32,7 @@ const About = () => {
             />
         </div>
         <div className={classes.article}>
-            <div></div>
+            <div className='none'></div>
             <div className={classes.articles}>
             {
                 data.map(items=>(
@@ -58,7 +58,7 @@ const About = () => {
         </div>
         </div>
         <div>
-            <BlueCard/>
+            {/* <BlueCard/> */}
         </div>
     </div>
   )

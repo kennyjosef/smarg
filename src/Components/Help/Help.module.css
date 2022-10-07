@@ -37,6 +37,7 @@
     color: rgba(0, 0, 0, 0.63);
     
 }
+
 @media screen and (max-width:768px) {
     .help{
         flex-direction: column;

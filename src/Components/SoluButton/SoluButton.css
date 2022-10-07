@@ -1,0 +1,15 @@
+.solu{
+    width: 109px;
+    height: 35px;
+    background: #EDF1FF;
+    border-radius: 7px;
+    border: none;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 12px;
+    color: #2522A7;
+}
