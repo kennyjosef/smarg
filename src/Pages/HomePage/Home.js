@@ -5,6 +5,7 @@ import Logo2 from '../../Assests/colors.png'
 import './Home.css'
 import Cards from '../../Components/Cards/Cards'
 import Help from '../../Components/Help/Help'
+import Solution from '../../Components/Solution/Solution'
 
 const Home = () => {
   const cardData= [
@@ -40,6 +41,9 @@ const Home = () => {
             <Cards img={items.logo} topic={items.topic} text={items.text} key={items.id}/>
           ))
         }
+      </div>
+      <div className='for-solution'>
+        <Solution/>
       </div>
     </div>
   )
