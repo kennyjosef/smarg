@@ -1,7 +1,7 @@
 import React from 'react'
 import './Testimonial.css'
 import Hero from '../../Components/Hero/Hero'
-// import BlueCard from '../../Components/BlueCard/BlueCard'
+import BlueCard from '../../Components/BlueCard/BlueCard'
 
 const Testimonial = () => {
  
@@ -30,9 +30,9 @@ You make a recurring customer-to-vendor payment when you pay a bill through a re
 You make a recurring customer-to-vendor payment when you pay a bill through a regularly scheduled direct debit from your checking account or an automatic charge to your credit card. </p>
         </div>
       </div>
-      {/* <div className='forBlue'>
-      <BlueCard style={style}/>
-      </div> */}
+      <div className='forBlue'>
+      <BlueCard/>
+      </div>
     </div>
   )
 }
