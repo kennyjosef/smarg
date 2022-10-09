@@ -8,6 +8,7 @@ import Cards from '../../Components/Cards/Cards'
 import classes from './About.module.css'
 import Button from '../../Components/Button/Button'
 import BlueCard from '../../Components/BlueCard/BlueCard'
+import Navbar from '../../Components/Navbar/Navbar'
 
 
 const About = () => {
@@ -17,6 +18,7 @@ const About = () => {
     ]
   return (
     <div>
+        <Navbar/>
         <div>
             <Hero
             first="Helping digital products "
@@ -57,7 +59,7 @@ const About = () => {
             <img src={Logo4} alt="pic"/>
         </div>
         </div>
-        <div>
+        <div className={classes.forblue}>
             <BlueCard/>
         </div>
     </div>

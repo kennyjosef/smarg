@@ -3,6 +3,9 @@ import Button from '../Button/Button'
 import classes from './Solution.module.css'
 import Logo7 from '../../Assests/emojiA.png'
 import Logo8 from '../../Assests/emojiB.png'
+import Logo9 from '../../Assests/circle.png'
+import Logo10 from '../../Assests/Vector.png'
+import Logo11 from '../../Assests/triangle.png'
 import SoluButton from '../SoluButton/SoluButton'
 // import  './Solution.css'
 
@@ -44,7 +47,16 @@ const Solution = () => {
                         </div>
                     </div>
                     </div>
-                    <div className={classes.move}></div>
+                    <div className={classes.move}>
+                        <div className={classes.moveOne}>
+                        <img src={Logo9} alt="pic"/>
+                        <h2>133</h2>
+                        </div>
+                        <div  className={classes.moveTwo}>
+                            <p>Ongoing Contract</p>
+                            <img src={Logo10} alt="pic"/>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className={classes.tanks}>
@@ -70,7 +82,16 @@ const Solution = () => {
                         </div>
                     </div>
                     </div>
-                    <div className={classes.move}></div>
+                    <div className={classes.move}>
+                        <div className={classes.moveOne}>
+                        <img src={Logo9} alt="pic"/>
+                        <h2>133</h2>
+                        </div>
+                        <div  className={classes.moveTwo}>
+                            <p>Ongoing Contract</p>
+                            <img src={Logo10} alt="pic"/>
+                        </div>
+                    </div>
                 </div>
                 <div className={classes.content}>
                     <p className={classes.digi}>Helping digital</p>
@@ -90,10 +111,22 @@ const Solution = () => {
                 </div>
                 <div className={classes.content2}>
                     <div className={classes.twocards}>
-                    <div className={classes.two}></div>
-                    <div className={classes.two}></div>
+                    <div className={classes.twos}>
+                        <p className={classes.p1}>available balance</p>
+                        <h4 className={classes.h4}>₦ 340,000    .78</h4>
+                        <div>
+                            <img src={Logo11} alt="pic"/>
+                            <p>36.5%</p>
+                        </div>
+                        <Button name='Withdraw Fund'/>
                     </div>
-                    <div className={classes.move}></div>
+                    {/* <div className={classes.two}></div> */}
+                    </div>
+                    <div className={classes.moves}>
+                        <p>Contract payment</p>
+                        <h4>₦ 340,000    .78</h4>
+                        
+                    </div>
                 </div>
             </div>
         </div>

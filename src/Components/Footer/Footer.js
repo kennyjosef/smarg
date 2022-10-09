@@ -11,7 +11,7 @@ const Footer = () => {
     <div className='footer'>
         <div className='item item1'>
             <div>
-                <Link>
+                <Link to="/">
                 <img src={Logo6} alt="pic"/>
                 </Link>
                 <p>©2021 Smarg Inc.</p>

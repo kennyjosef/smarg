@@ -6,6 +6,8 @@ import './Home.css'
 import Cards from '../../Components/Cards/Cards'
 import Help from '../../Components/Help/Help'
 import Solution from '../../Components/Solution/Solution'
+import Navbar from '../../Components/Navbar/Navbar'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   const cardData= [
@@ -17,6 +19,7 @@ const Home = () => {
   ]
   return (
     <div className='home'>
+      <Navbar/>
     <div className='for-heroSection'>
      <Hero 
       first='Helping digital products '
@@ -27,7 +30,9 @@ const Home = () => {
         <input 
         type="text"
         placeholder='Enter Email Address'/>
-        <Button name="Get Started"/>
+        <Link to="/signup">
+          <Button name="Get Started"/>
+        </Link>
       </form>
       </div>
       <Help

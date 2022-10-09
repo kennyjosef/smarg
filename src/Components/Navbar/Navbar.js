@@ -23,14 +23,14 @@ const Navbar = () => {
           <Link to="/">How it Works</Link>
           <Link to="/about">About Us</Link>
           <Link to="/testimonial">Testimonials</Link>
-      <div className='nav-first'>
-        <a href=''>Sign in</a>
-        <Button name='Get Started'className="fisrtBtn"/>
-      </div>
         </ul>
       <div className='nav-last'>
-        <a href='#'>Sign in</a>
-        <Button name='Get Started'/>
+        <Link to="/signin">
+          <p>Sign in</p>
+        </Link>
+        <Link to="/signup">
+              <Button name='Get Started'/>
+        </Link>
       </div>
         <div className='hamburger' onClick={handleClick} >
                 {toggle?<span>&#9776;</span>:<span>&times;</span>

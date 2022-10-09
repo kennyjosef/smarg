@@ -66,6 +66,9 @@
     left: 550px;
     top: 720px;
 }
+.forblue{
+    margin-top: 400px;
+}
 @media screen and (max-width:768px) {
     .article{
         width: 100%;
@@ -113,5 +116,7 @@
     .image{
         display: none;
     }
-    
+    .forblue{
+        margin-top: 20px;
+    }
 }

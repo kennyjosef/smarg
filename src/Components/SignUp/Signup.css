@@ -1,0 +1,253 @@
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;   
+ font-family: sans-serif;
+}
+.me{
+    width: 80%;
+    margin: auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+}
+.ul-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+ul li{
+    list-style-type: none;
+}
+
+.items1 p:nth-child(1) {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 139.2%;
+    letter-spacing: 0.175em;
+    text-transform: uppercase;
+    background: linear-gradient(92.21deg, #2F4FFF 0.53%, #0085FF 99.3%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.items1 h3{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 52px;
+    width: 450px;    
+    color: #000000;
+    padding: 7px 0px 15px 0px;
+    
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+}
+.items2{
+    width: 515px;
+    /* height: 463px; */
+    background: #FFFFFF;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+.para {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: rgba(1, 0, 63, 0.74); 
+    padding-top: 40px;  
+}
+.para a{
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: rgba(1, 0, 63, 0.74); 
+}
+.formFirst{
+    margin: 30px 35px 20px 35px;
+}
+.formFirst input{
+    width: 400px;
+    height: 56px;
+    border: 0.5px solid #E0E0E0;
+    border-radius: 7px;
+    margin: auto;
+    padding-left: 20px;
+    outline: none;
+    font-size: 15px;
+
+
+}
+.formSecond{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin:0px 35px 20px 35px ;
+    width: 400px;
+}
+.formSecond input{
+    height: 56px;
+    background: #FFFFFF;
+    border: 0.5px solid #E0E0E0;
+    border-radius: 7px;
+    padding-left: 20px;
+    outline: none;
+}
+.words{
+    text-align: center;
+}
+.words p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    width: 320px;
+    margin: auto;    
+    text-align: center;
+    color: #5A5A5A;
+    padding-bottom: 15px;
+}
+.words p a{
+    font-style: normal;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #5A5A5A;
+
+}
+.words div{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 0px 20px 35px;
+    
+}
+.words button{
+    width: 180px;
+    height: 56px;
+}
+.one{
+    border: 0.5px solid #2522A7;
+    border-radius: 7px;
+    background-color: #F9F8FF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #040403;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.two{
+    cursor: pointer;
+    background: #2522A7;
+    border-radius: 7px;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FBFBFF;
+    
+}
+.formFirst p{
+    color: red;
+    font-size: 10px;
+}
+.formSecond p{
+    color: red;
+    font-size: 10px;
+    padding-left: 0;
+    text-align: left;
+}
+@media screen and (max-width:768px) {
+ .header{
+    width: 100%;
+    position:fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 20px;
+    z-index: 1064;
+ }   
+ .ul-link{
+    display: none;
+ }
+ form{
+    width: 80%;
+    margin: auto;
+ }
+ .items{
+    width: 100%;
+    flex-direction: column;
+    margin-top: 110px;
+
+ }
+ 
+ .items2{
+    margin-top: 30px;
+    width: 100%;
+
+ }
+ .formFirst{
+    margin: 15px 0px 20px 0px;
+    width: 100%;
+
+ }
+ .formFirst input{
+    width: 100%;
+ }
+ .formSecond{
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    gap: 20px;
+ }
+ .formSecond input{
+    width: 100%;
+ }
+ .items1 p{
+    padding-left: 15px;
+ }
+ .items1 h3{
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 35px;
+    width: 100%;
+    padding-left: 15px;
+ }
+ .me{
+    width: 100%;
+ }
+ 
+ .words div{
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+    padding-bottom: 50px;
+ }
+ .words p{
+
+    max-width: 100%;
+ }
+ 
+}

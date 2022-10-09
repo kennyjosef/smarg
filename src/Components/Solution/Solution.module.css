@@ -145,6 +145,109 @@
     background: #09005D;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
     border-radius: 7px;
+    color: white;
+    font-family: sans-serif;
+}
+.twos{
+    width: 280px;
+    height: 280px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
+    /* align-items: center; */
+
+}
+.p1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    font-family: sans-serif;    
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    padding-top: 60px;
+    color: rgba(7, 1, 70, 0.64);
+}
+.h4{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    font-family: sans-serif;
+    color: #070146;
+    padding-top: 18px;
+    
+}
+
+.twos div{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    gap: 10px;
+    justify-content: center;
+}
+.twos div p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #07A055;
+}
+.not{
+    display: none;
+}
+.moves{
+    width: 250px;
+    height: 85px;
+    position: absolute;
+    right: -50px;
+    top: 30px;
+    background: #09005D;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.moves p{
+    font-style: normal;
+    font-weight: 200;
+    font-size: 10px;
+    line-height: 13px;
+    font-family: sans-serif;    
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    color: #ffefef;
+
+}
+.moves h4{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    font-family: sans-serif;
+    color: #FFFFFF
+}
+.moveOne{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.moveOne h2{
+    padding-left: 20px;
+}
+.moveTwo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .twoOne{
     display: flex;
@@ -229,7 +332,18 @@
     .move{
         width: 80%;
         right: -20px;
-        top: 320px;
+        top: 260px;
+        /* position: unset; */
+    }
+    .twos{
+        width: 90%;
+        margin: auto;
+        margin-top: 90px;
+    }
+    .moves{
+        width: 80%;
+        right: -20px;
+        top: 90px;
         /* position: unset; */
     }
     .great{
