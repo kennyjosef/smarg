@@ -279,6 +279,8 @@
     color: #D71920;
     
     
+}.moving{
+    display: none;
 }
 @media screen and (max-width:768px) {
     .container{
@@ -343,7 +345,7 @@
     .moves{
         width: 80%;
         right: -20px;
-        top: 90px;
+        top: 30px;
         /* position: unset; */
     }
     .great{

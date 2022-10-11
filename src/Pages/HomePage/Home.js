@@ -8,6 +8,7 @@ import Help from '../../Components/Help/Help'
 import Solution from '../../Components/Solution/Solution'
 import Navbar from '../../Components/Navbar/Navbar'
 import { Link } from 'react-router-dom'
+import Dashboard from '../../Components/Dashboard/Dashboard'
 
 const Home = () => {
   const cardData= [
@@ -34,6 +35,9 @@ const Home = () => {
           <Button name="Get Started"/>
         </Link>
       </form>
+      </div>
+      <div>
+        <Dashboard/>
       </div>
       <Help
         one="Helping digital"

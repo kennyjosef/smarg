@@ -30,6 +30,9 @@
     justify-content: space-between;
     margin-bottom: 100px;
 }
+.for-heroSection{
+    margin-bottom: 100px;
+}
 @media screen and (max-width:768px) {
     .for-cards{
         width: 100%;
@@ -39,7 +42,9 @@
     .form{
         width: 90%;
         margin: auto;
-        /* flex-direction: column; */
-        /* border: 1px solid red; */
+
+    }
+    .for-heroSection{
+        margin-bottom: 10px;
     }
 }

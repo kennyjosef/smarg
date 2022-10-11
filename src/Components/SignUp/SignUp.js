@@ -5,6 +5,11 @@ import Logo12 from '../../Assests/google.png'
 import './Signup.css'
 
 const SignUp = () => {
+    const [showBurger, setShowBurger] = useState(true)
+
+    function handleShow (){
+        return setShowBurger(preShow=> !preShow)
+    }
     const initialValues = {email: "",firstname: "",lastname: "",password: ""}
     const [formValues, setFormValues] = useState(initialValues);
     const [formErrors , setFormErrors]= useState({})
@@ -29,10 +34,14 @@ const SignUp = () => {
     }, [formErrors])
     const validate = (values)=>{
         const errors ={};
-        const regex = /^[^\s@]+@[^\s@]+\.[s@]{2,}$/i;
-        const regexName = /[a-zA-Z]/
+        const regex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
+        const regexName = /^[^-\s\d][a-zA-Z\s-]+$/
         if(!values.email){
             errors.email= "Email is required"
+        }else if (!regex.test(values.email)){
+            errors.email="Not a a valid input "
+        }else{
+            errors.email="Valid "
         }
         if(!values.firstname){
             errors.firstname= "First Name is required"
@@ -67,7 +76,7 @@ const SignUp = () => {
                 <Link to='/'>
                     <img src={Logo11} alt="pic"/>
                 </Link>
-                <ul className='ul-link'>
+                <ul className={showBurger? 'ul-link': 'navShow'}>
                 <Link to="/testimonial">
                     <li>Privacy Policy</li>
                 </Link>
@@ -75,6 +84,12 @@ const SignUp = () => {
                     <li>Terms of Service</li>
                 </Link>
                 </ul>
+                <div className='hamburger' onClick={handleShow}>
+                    {
+
+                    showBurger?<span>&#9776;</span>:<span>&times;</span>
+                    }
+                </div>
             </div>
             <div className='items'>
                 <div className='items1'>
@@ -95,7 +110,6 @@ const SignUp = () => {
                             placeholder='Emial Address'
                             value={formValues.email}
                             onChange={handleChange}
-                            // required
 
                             />
                             <p>{formErrors.email}</p>
@@ -108,7 +122,6 @@ const SignUp = () => {
                             placeholder='First Name'
                             value={formValues.firstname}
                             onChange={handleChange}
-                            // required
                             />
                             <p>{formErrors.firstname}</p>
                             </div>
@@ -119,7 +132,6 @@ const SignUp = () => {
                             placeholder='Last Name'
                             value={formValues.lastname}
                             onChange={handleChange}
-                            // required
 
                             />
                             <p>{formErrors.lastname}</p>
@@ -132,7 +144,6 @@ const SignUp = () => {
                             placeholder='Create Password'
                             value={formValues.password}
                             onChange={handleChange}
-                            // required
 
                             />
                             <p>{formErrors.password}</p>

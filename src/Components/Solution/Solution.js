@@ -7,7 +7,7 @@ import Logo9 from '../../Assests/circle.png'
 import Logo10 from '../../Assests/Vector.png'
 import Logo11 from '../../Assests/triangle.png'
 import SoluButton from '../SoluButton/SoluButton'
-// import  './Solution.css'
+import { Link } from 'react-router-dom'
 
 const Solution = () => {
   return (
@@ -23,7 +23,9 @@ const Solution = () => {
                     <p className={classes.digi}>Helping digital</p>
                     <h3 className={classes.great}>With Clear agreements.</h3>
                     <p className={classes.sta}> No unclear, un-ending, and un-defined work or task, know exactly what’s expected.</p>
-                    <Button name="Get Started"/>
+                    <Link to="/signup">
+                        <Button name="Get Started"/>
+                    </Link>
                 </div>
                 <div className={classes.content2}>
                     <div className={classes.twocards}>
@@ -97,7 +99,9 @@ const Solution = () => {
                     <p className={classes.digi}>Helping digital</p>
                     <h3 className={classes.great}>Track work progress and velocity.</h3>
                     <p className={classes.sta}> No unclear, un-ending, and un-defined work or task, know exactly what’s expected.</p>
-                    <Button name="Get Started"/>
+                    <Link to="/signup">
+                        <Button name="Get Started"/>
+                    </Link>
 
                 </div>
             </div>
@@ -106,7 +110,9 @@ const Solution = () => {
                     <p className={classes.digi}>Helping digital</p>
                     <h3 className={classes.great}>Clients and freelancers money secured.</h3>
                     <p className={classes.sta}> Before work starts, payment is made into the contract. Money is only released when work has been done and approved.</p>
-                    <Button name="Get Started"/>
+                    <Link to="/signup">
+                        <Button name="Get Started"/>
+                    </Link>
 
                 </div>
                 <div className={classes.content2}>

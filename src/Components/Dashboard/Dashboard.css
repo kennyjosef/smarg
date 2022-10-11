@@ -1,0 +1,27 @@
+.top{
+    margin-top: 200px;
+    position: relative;
+}
+.bigger{
+    background-color: #09005D;
+    height: 900px;
+    width: 100%;
+}
+.posi{
+    position: absolute;
+    top: -200px;
+    left: 250px;
+}
+@media screen and (max-width:768px) {
+    .top{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .posi img{
+        max-width: 100%;
+    }
+    .posi{
+        display: none;
+        margin-top: 20px;
+    }
+}

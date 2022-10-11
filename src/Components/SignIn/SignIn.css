@@ -28,7 +28,6 @@
     border-radius: 8px;
     margin: auto;
     margin-top: 120px;
-    /* border: 1px solid red; */
 
 }
 .containerForm h4{
@@ -38,16 +37,136 @@
     line-height: 28px;
     text-align: center;
     color: #040403;
+    padding-top: 34px;
+    padding-bottom: 10px;
 }
 .part{
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
-    /* identical to box height, or 129% */
-    
     text-align: center;
-    
     color: #5A5A5A;
+    padding-bottom: 30px;
     
 }
+.containerForm input{
+    width: 445px;
+    height: 56px;
+    border: 0.5px solid #E0E0E0;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.forgot{
+    width: 200px;
+    height: 22px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 37px;
+}
+.last-btn{
+    width: 445px;
+    height: 56px;
+    margin: auto;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.Lone{
+    border: 0.5px solid #2522A7;
+    border-radius: 7px;
+    background-color: #F9F8FF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #040403;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 180px;
+    height: 56px;
+}
+.Ltwo{
+    cursor: pointer;
+    background: #2522A7;
+    border-radius: 7px;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FBFBFF; 
+    width: 180px;
+    height: 56px;
+    
+}
+.Lpart{
+    text-align: center;
+    padding-top: 26px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: rgba(1, 0, 63, 0.74);
+    
+}
+.Lpart a{
+    font-style: normal;
+    font-weight: 6 00;
+    font-size: 15px;
+    line-height: 22px;
+     color: rgba(1, 0, 63, 0.74);
+}
+@media screen and (max-width:768px) {
+    .head{
+        width: 100%;
+    }
+    .ul{
+        display: none;
+        /* border: 1px solid red; */
+    }
+    .containerForm{
+        width: 100%;
+        margin-top: 120px;
+    }
+    .containerForm input{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .forgot{
+         width: 80%; 
+        margin: auto; 
+        margin-left: 30px;
+        margin-bottom: 10px;
+        /* text-align: center; */
+        font-weight: 500;
+    }
+    .last-btn{
+        width: 80%;
+        height: 130px;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+    .Lpart{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .part{
+        width: 100%;
+    }
+}
+

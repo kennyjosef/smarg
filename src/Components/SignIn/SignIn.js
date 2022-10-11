@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Logo11 from '../../Assests/logo.svg'
 import Logo12 from '../../Assests/google.png'
 import './SignIn.css'
+// https://www.coreldraw.com/en/pages/10600028.html
 
 
 
 const SignIn = () => {
+    const [displayHamburger, setDispalyHamburger] =useState(true)
+
+    function handleDisplay (){
+       return setDispalyHamburger(preDisplay => !preDisplay)
+    }
   return (
     <div>
         <div className='main'>
@@ -14,7 +20,7 @@ const SignIn = () => {
             <Link to='/'>
                 <img src={Logo11} alt="pic"/>
             </Link>
-            <ul className='ul' >
+            <ul className={displayHamburger? "ul": "navShow"} >
                 <Link to="/testimonial">
                     <li>Privacy Policy</li>
                 </Link>
@@ -22,6 +28,12 @@ const SignIn = () => {
                     <li>Terms of Service</li>
                 </Link>
             </ul>
+            <div className='hamburger' onClick={handleDisplay}> 
+            {
+
+                displayHamburger ?<span>&#9776;</span>:<span>&times;</span>
+            }
+            </div>
         </div>
         </div>
 
@@ -49,14 +61,16 @@ const SignIn = () => {
                 </div>
 
             </div>
-            <p>Forgot Password?</p>
-            <div>
-                    <button className=''> <img  src={Logo12} alt="pic"/>Sign Up with Google</button>
-                    <button className=''>Sign Up</button>
+            <p className='forgot'>Forgot Password?</p>
+            <div className='last-btn'>
+                    <button className='Lone'> <img  src={Logo12} alt="pic"/>Sign Up with Google</button>
+                    <button className='Ltwo'>Sign Up</button>
             </div>
              
         </div>
-        <p>Not a member? Sign Up</p>
+        <p className='Lpart'>Not a member? 
+          <Link to="/signup">Sign Up</Link>
+        </p>
     </div>
   )
 }
