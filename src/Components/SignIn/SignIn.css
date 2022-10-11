@@ -130,10 +130,10 @@
 @media screen and (max-width:768px) {
     .head{
         width: 100%;
+        align-items: center;
     }
     .ul{
         display: none;
-        /* border: 1px solid red; */
     }
     .containerForm{
         width: 100%;

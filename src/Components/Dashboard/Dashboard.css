@@ -12,10 +12,69 @@
     top: -200px;
     left: 250px;
 }
+.big{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    font-family: sans-serif;    
+    text-align: center;
+    color: #FFFFFF;
+    width: 470px;
+    margin: auto;
+    padding-top: 600px;
+    padding-bottom: 40px;
+
+}
+.dashcontent{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+}
+.dashy{
+    display: flex;
+    flex-direction: column;
+}
+.dashy h3{
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding-left: 22px;
+}
+.dashy p{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    width: 160px;
+    padding-left: 35px;
+    color: rgba(255, 255, 255, 0.63);
+}
+.dashflex{
+    display: flex;
+    align-items: center;
+}
+/* .forbtn{
+    display: flex;
+    width: 400px;
+    margin: auto;
+    justify-content: space-between;
+    margin: 50px  auto;
+} */
 @media screen and (max-width:768px) {
+    .bigger{
+        height: auto;
+    }
     .top{
         width: 100%;
-        margin-top: 0px;
+        margin-top: 30px;
+        padding-bottom: 20px;
     }
     .posi img{
         max-width: 100%;
@@ -24,4 +83,35 @@
         display: none;
         margin-top: 20px;
     }
+    .big{
+        width: 80%;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        line-height: 20px;
+    
+    }
+    .dashcontent{
+        flex-direction: column;
+    }
+    .dashy{
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .dashy h3{
+        font-style: normal;
+        padding-left: 0;
+
+    }
+    .dashy p{
+        width: 100%;
+    }
+    .dashflex{
+        flex-direction: column;
+        align-items:center ;
+    }
+    /* .forbtn{
+       display: none;
+    } */
 }

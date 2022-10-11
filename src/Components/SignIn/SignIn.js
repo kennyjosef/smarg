@@ -21,7 +21,7 @@ const SignIn = () => {
                 <img src={Logo11} alt="pic"/>
             </Link>
             <ul className={displayHamburger? "ul": "navShow"} >
-                <Link to="/testimonial">
+                <Link ton="/testimonial">
                     <li>Privacy Policy</li>
                 </Link>
                 <Link to="/testimonial">            

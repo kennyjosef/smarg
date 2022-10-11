@@ -1,0 +1,25 @@
+.caro{
+    width: 350px;
+    height: 300px;
+}
+.caro h4{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    font-family: sans-serif;
+    padding-bottom: 21px;
+    color: #000F30;
+    
+}
+.caro p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 43px;
+    font-family: sans-serif;    
+    text-align: center;
+    color: #000F30;
+    
+}
