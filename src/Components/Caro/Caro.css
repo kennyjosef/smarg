@@ -23,3 +23,9 @@
     color: #000F30;
     
 }
+@media screen and (max-width:768px) {
+    .caro h4{
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
