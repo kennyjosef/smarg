@@ -36,6 +36,9 @@
 .caro{
     /* margin-top: 60px; */
 }
+.for-BlueCard{
+    margin-top: 60px;
+}
 @media screen and (max-width:768px) {
     .for-cards{
         width: 100%;
@@ -49,5 +52,8 @@
     }
     .for-heroSection{
         margin-bottom: 10px;
+    }
+    .for-BlueCard{
+        margin-top: 30px;
     }
 }

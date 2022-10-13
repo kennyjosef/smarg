@@ -35,6 +35,10 @@
 
 }
 
+.ul a:hover{
+    color: #09005D;
+}
+
 
 .nav-last{
     display: flex;

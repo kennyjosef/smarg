@@ -9,6 +9,7 @@ import classes from './About.module.css'
 import Button from '../../Components/Button/Button'
 import BlueCard from '../../Components/BlueCard/BlueCard'
 import Navbar from '../../Components/Navbar/Navbar'
+import Footer from '../../Components/Footer/Footer'
 
 
 const About = () => {
@@ -62,6 +63,9 @@ const About = () => {
         <div className={classes.forblue}>
             <BlueCard/>
         </div>
+        <div>
+            <Footer/>
+         </div>
     </div>
   )
 }

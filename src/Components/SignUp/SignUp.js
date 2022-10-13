@@ -38,9 +38,8 @@ const SignUp = () => {
         const regexName = /^[^-\s\d][a-zA-Z\s-]+$/
         if(!values.email){
             errors.email= "Email is required"
-        }else if (!regex.test(values.email)){
-            errors.email="Not a a valid input "
-        }else{
+        }else if (!regex.test(values.email)) {
+            errors.email="Not a  valid input " }else{
             errors.email="Valid "
         }
         if(!values.firstname){
@@ -139,7 +138,7 @@ const SignUp = () => {
                         </div>
                         <div className='formFirst'>
                         <input
-                            type="password"
+                            type="password" 
                             name="password"
                             placeholder='Create Password'
                             value={formValues.password}

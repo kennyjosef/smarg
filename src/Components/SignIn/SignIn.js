@@ -61,7 +61,9 @@ const SignIn = () => {
                 </div>
 
             </div>
-            <p className='forgot'>Forgot Password?</p>
+            <Link to="/password">
+                <p className='forgot'>Forgot Password?</p>
+            </Link>
             <div className='last-btn'>
                     <button className='Lone'> <img  src={Logo12} alt="pic"/>Sign Up with Google</button>
                     <button className='Ltwo'>Sign Up</button>

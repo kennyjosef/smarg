@@ -12,6 +12,9 @@ import { Link } from 'react-router-dom'
 import Dashboard from '../../Components/Dashboard/Dashboard'
 import Caro from '../../Components/Caro/Caro'
 import What from '../../Components/WhatTheySay/What'
+import BlueCard from '../../Components/BlueCard/BlueCard'
+import Footer from "../../Components/Footer/Footer";
+
 const Home = () => {
   const cardData= [
     {id:1, logo:Logo2, topic:'Contract',text:'The payment terms, timeline, contract goals, NDA’s, tasks, and everything needed to make sure the work is understood and done.'},
@@ -33,6 +36,7 @@ const Home = () => {
     {id:4, head:"“A bit like building a house, from floor plans to final coat of paint. Our process is very flexible”", text:"Julie - Product Designer "},
     {id:5, head:"“A bit like building a house, from floor plans to final coat of paint. Our process is very flexible”", text:"Julie - Product Designer "}
   ];
+  
   return (
     <div className='home'>
       <Navbar/>
@@ -45,7 +49,8 @@ const Home = () => {
       <form className='form'>
         <input 
         type="text"
-        placeholder='Enter Email Address'/>
+        placeholder='Enter Email Address'
+        />
         <Link to="/signup">
           <Button name="Get Started"/>
         </Link>
@@ -79,6 +84,12 @@ const Home = () => {
               ))
             }
           </Carousel>
+          <div className='for-BlueCard'>
+            <BlueCard/>
+          </div>
+          <div>
+            <Footer/>
+          </div>
        
     </div>
   )

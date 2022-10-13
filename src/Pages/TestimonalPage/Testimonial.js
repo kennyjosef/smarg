@@ -3,6 +3,7 @@ import './Testimonial.css'
 import Hero from '../../Components/Hero/Hero'
 import BlueCard from '../../Components/BlueCard/BlueCard'
 import Navbar from '../../Components/Navbar/Navbar'
+import Footer from '../../Components/Footer/Footer'
 
 const Testimonial = () => {
  
@@ -44,6 +45,9 @@ You make a recurring customer-to-vendor payment when you pay a bill through a re
       </div>
       <div className='forBlue'>
       <BlueCard/>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   )
