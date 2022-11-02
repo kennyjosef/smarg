@@ -39,22 +39,17 @@ const SignUp = () => {
         if(!values.email){
             errors.email= "Email is required"
         }else if (!regex.test(values.email)) {
-            errors.email="Not a  valid input " }else{
-            errors.email="Valid "
-        }
+            errors.email="Not a  valid email " }
+        
         if(!values.firstname){
             errors.firstname= "First Name is required"
         }else if (!regexName.test(values.firstname)){
-            errors.firstname="Field cannot be empty or filled with numbers"
-        }else{
-            errors.firstname="Valid"
+            errors.firstname="Field does not accept numbers"
         }
         if(!values.lastname){
             errors.lastname= "Last Name is required"
         }else if (!regexName.test(values.lastname)){
-            errors.lastname="Field cannot be empty or filled with numbers"
-        }else{
-            errors.lastname="Valid"
+            errors.lastname="Field does not accept numbers"
         }
         if(!values.password){
             errors.password= "Password is required"
@@ -62,9 +57,8 @@ const SignUp = () => {
             errors.password="Password must be more than 4 characters"
         }else if(values.password.length > 10){
             errors.password="Password cannot be greater than ten characters"
-        }else{
-            errors.password='Valid Input'
         }
+        
         return errors
 
         

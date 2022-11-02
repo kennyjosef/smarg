@@ -29,11 +29,11 @@ const SignIn = () => {
         setSigninErrors(validateSign(signValues))
         setSigntSubmit(true)
     }
-    // useEffect(()=>{
-    //     if(Object.key(signinErrors).length===0 && signSubmit){
+    useEffect(()=>{
+        if(Object.keys(signinErrors).length===0 && signSubmit){
 
-    //     }
-    // },[signinErrors])
+        }
+    },[signinErrors])
     const validateSign =(values)=>{
         const errors={};
         const regex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
@@ -64,7 +64,7 @@ const SignIn = () => {
                 <img src={Logo11} alt="pic"/>
             </Link>
             <ul className={displayHamburger? "ul": "navShow"} >
-                <Link ton="/testimonial">
+                <Link to="/testimonial">
                     <li>Privacy Policy</li>
                 </Link>
                 <Link to="/testimonial">            
@@ -113,8 +113,8 @@ const SignIn = () => {
                 <p className='forgot'>Forgot Password?</p>
             </Link>
             <div className='last-btn'>
-                    <button className='Lone'> <img  src={Logo12} alt="pic"/>Sign Up with Google</button>
-                    <button className='Ltwo'>Sign Up</button>
+                    <button className='Lone'> <img  src={Logo12} alt="pic"/>Sign In with Google</button>
+                    <button className='Ltwo'>Sign In</button>
             </div>
              
         </form>

@@ -103,7 +103,7 @@
     }
     .hamburger{
         display: block;
-        font-size: 40px;
+        font-size: 20px;
         border-radius: 3px;
         cursor: pointer;
     }
